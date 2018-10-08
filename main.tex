@@ -1,0 +1,38 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage{hyperref}
+
+\setlength\parindent{0pt}
+
+\title{CS 224 Object Oriented Programming and Design Methodologies}
+\author{Assignment 04}
+\date{Out: 5 October, Due: 15 Oct, 1830h}
+
+\begin{document}
+\maketitle
+
+\section{Task}
+
+For this assignment you will be creating a drawing program of your own. You are provided with a folder \path{Artistik} that contains sample code. The code uses {\tt SDL 2} about which you can learn through the \href{\href{http://lazyfoo.net/tutorials/SDL/}}{lazyfoo tutorials}. The code provides two structures, {\tt Point} and {\tt Color}, and allows to draw a red rectangle by left clicking the mouse and dragging. Your task is to extend the sample code as defined below.
+
+When the sample code is run, each drawn rectangle causes the previous rectangle to be lost. You are required to store all drawn rectangles in a stack. Every drawn rectangle should be stored in the stack. As rectangles are drawn on the screen, the stack keeps getting populated. You need to implement the following.
+
+\begin{itemize}
+\item You will need to declare a {\tt Shape} class and derive the classes {\tt Rect} and {\tt Line} from it.
+\item You will create a {\tt Stack} class that implements a stack containing pointers to {\tt Shape} objects.
+\item You will need to study {\tt SDL}'s documentation to understand how a line is drawn.
+\item Use a {\tt Color} object to assign a random color to every newly drawn line or rectangle.
+\item The user should use they keys {\tt r} and {\tt l} to select the drawing of a {\tt Line} or {\tt Rectangle} respectively.
+\item Clicking the right mouse button will undo the last drawn shape and pop it from the stack.
+\item Popped shapes will be stored in a separate {\it undo stack}.
+\item Clicking the middle mouse button will {\it redo}--it will pop the topmost shape from the undo stack and push it on the first stack.
+\item When a new shape is drawn after an undo operation, the undo stack will be purged.
+\item {\tt -} and {\tt +} keys will change the order of the last drawn object within the stack. {\tt -} will cause the shape to go deeper in the stack and {\tt +} will move the shape toward the top.
+\item There is a memory leak in the {\tt main} program. You are required to identify it by commenting it appropraitely and to fix it.
+\end{itemize}
+
+\begin{center}
+  -- The End --
+\end{center}
+
+
+\end{document}
