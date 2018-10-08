@@ -1,4 +1,4 @@
-# Assignment 03, Fall 2018 - Classes and Objects
+# Assignment 04, Fall 2018 - SDL and Inheritance
 
 This assignment introduces you to inheritance and to SDL.
 
