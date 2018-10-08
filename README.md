@@ -19,7 +19,7 @@ Here are some guidelines for the assignment.
 - Grading is indicated in the rubric, _Assignment_Rubric.csv_.
 
 ## Submission
-- Due: 1830h on 5th of October on Github.
+- Due: 1830h on 15th of October on Github.
 - Note the submission deadline above. GitHub logs submission time and late submissions will not be graded.
 - Submission through other means, e.g. over email, will be ignored.
 ### Submission - WS section
